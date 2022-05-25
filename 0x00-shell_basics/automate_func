@@ -1,11 +1,16 @@
 #!/bin/bash
-vi 6-firstdirectory && chmod u+x 6-firstdirectory
-vi 7-movethatfile && chmod u+x 7-movethatfile
-vi 8-firstdelete && chmod u+x 8-firstdelete
-vi 9-firstdirdeletion && chmod u+x 9-firstdirdeletion
-vi 10-back && chmod u+x 10-back
-vi 11-lists && chmod u+x 11-lists
-vi 12-file_type && chmod u+x 12-file_type
-vi 13-symbolic_link && chmod u+x 6-firstdirectory
-vi 14-copy_html && chmod u+x 14-copy_html
-
+vi 0-current_working_directory  
+vi 14-copy_html     
+vi 5-listfilesdigitonly  
+vi 10-back                      
+vi 1-listit         
+vi 6-firstdirectory
+vi 11-lists                     
+vi 2-bring_me_home  
+vi 7-movethatfile
+vi 12-file_type                 
+vi 3-listfiles      
+vi 8-firstdelete
+vi 13-symbolic_link             
+vi 4-listmorefiles  
+vi 9-firstdirdeletion
