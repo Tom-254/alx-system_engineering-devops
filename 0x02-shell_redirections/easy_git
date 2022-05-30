@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "$1" != "" ]; then
-	echo "- $2 ==>	$3" >> README.md
+	echo "- $1 ==>	$2" >> README.md
 	git add . && git commit -m "redirections" && git push
 	
     else
