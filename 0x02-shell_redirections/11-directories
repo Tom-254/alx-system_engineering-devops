@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 2 -mindepth 2 -type d -printf '.' | wc -c  
+find . -mindepth 1 -type d | wc -l  
