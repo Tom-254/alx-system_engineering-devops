@@ -1,7 +1,8 @@
 #!/bin/bash
 if [ "$1" != "" ]; then
-	echo "$2 '==>' $3" >> README.md
+	echo "- $2 ==>	$3" >> README.md
 	git add . && git commit -m "redirections" && git push
+	
     else
 	        echo "Positional parameter 1 is empty"
 fi
