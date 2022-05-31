@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$1" != "" ]; then
+	echo "- $1 ==>	$2" >> README.md
+	git add . && git commit -m "0x03. Shell, init files, variables and expansions" && git push
+	
+    else
+	        echo "Positional parameter 1 is empty"
+fi
