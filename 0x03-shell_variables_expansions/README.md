@@ -9,3 +9,4 @@
 - 9-divide_and_rule ==>	prints the result of POWER divided by DIVIDE, followed by a new line.
 - 10-love_exponent_breath ==>	displays the result of BREATH to the power LOVE
 - 11-binary_to_decimal ==>	onverts a number from base 2 to base 10.
+- 4-global_variables ==>	lists environment variables.
