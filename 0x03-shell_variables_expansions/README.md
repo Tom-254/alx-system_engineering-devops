@@ -11,3 +11,4 @@
 - 11-binary_to_decimal ==>	onverts a number from base 2 to base 10.
 - 4-global_variables ==>	lists environment variables.
 - 13-print_float ==>	prints a number with two decimal places, followed by a new line.
+- 3-paths ==>	counts the number of directories in the PATH
