@@ -12,3 +12,4 @@
 - 4-global_variables ==>	lists environment variables.
 - 13-print_float ==>	prints a number with two decimal places, followed by a new line.
 - 3-paths ==>	counts the number of directories in the PATH
+- 12-combinations ==>	prints all possible combinations of two letters, except oo.
