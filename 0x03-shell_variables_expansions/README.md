@@ -15,3 +15,4 @@
 - 12-combinations ==>	prints all possible combinations of two letters, except oo.
 - 100-decimal_to_hexadecimal ==>	 converts a number from base 10 to base 16.
 - 102-odd ==>	prints every other line from the input, starting with the first line.
+- 101-rot13 ==>	encodes and decodes text using the rot13 encryption. Assume ASCII.
