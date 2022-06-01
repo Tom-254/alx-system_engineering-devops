@@ -14,3 +14,4 @@
 - 3-paths ==>	counts the number of directories in the PATH
 - 12-combinations ==>	prints all possible combinations of two letters, except oo.
 - 100-decimal_to_hexadecimal ==>	 converts a number from base 10 to base 16.
+- 102-odd ==>	prints every other line from the input, starting with the first line.
