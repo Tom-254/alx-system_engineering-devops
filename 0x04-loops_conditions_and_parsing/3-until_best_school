@@ -1,8 +1,7 @@
-#!/usr/bin/env bash
-#prints Holberton 10 times using for loops
+#Print "Holberton School" 10 times using an until loop
 i=0
-until ((i > 9))
+until [ $i -eq 10 ]
 do
-    echo "Holberton School"
-    ((i++))
+	echo "Holberton School"
+	i=$((i+1))
 done
