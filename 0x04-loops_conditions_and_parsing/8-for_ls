@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #print files in current directory
 LIST="$(ls)"
-for file in "$LIST"
+for file in $LIST
 do
     echo "$file" | cut -d "-" -f2
 done
