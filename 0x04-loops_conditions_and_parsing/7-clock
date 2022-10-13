@@ -3,12 +3,12 @@
 hour=0
 while ((hour <= 12))
 do
-    minute=1
-    echo "Hour: $hour"
-    while ((minute <= 59))
-    do
-        echo "$minute"
-        ((minute++))
-    done
-    ((hour++))
+	minute=1
+	echo "Hour: $hour"
+	while ((minute <= 59))
+	do
+		echo "$minute"
+		((minute++))
+	done
+	((hour++))
 done
