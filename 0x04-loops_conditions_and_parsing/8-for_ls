@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #print files in current directory
-for ((i=0; i<1;i++))
+LIST="$(ls)"
+for file in "$LIST"
 do
-    find ./* | cut -d "-" -f2 | cut -d "/" -f2
+    echo "$($file | cut -d "-" -f2 | cut -d "/" -f2)"
 done
