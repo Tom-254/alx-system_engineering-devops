@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#prints Holberton 10 times using for loops
+#prints Best School 10 times using for loops
 i=0
 until ((i > 9))
 do
-	echo "Holberton School"
+	echo "Best School"
 	((i++))
 done

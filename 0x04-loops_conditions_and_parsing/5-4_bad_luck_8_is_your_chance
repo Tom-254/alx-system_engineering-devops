@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#prints Holberton 10 times with bad and good luck
+#prints Best School 10 times with bad and good luck
 i=1
 while ((i <= 10))
 do
