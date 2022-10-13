@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-
+#prints Holberton 10 timesl
+i=0
+while (( i < 10))
+do
+    echo "Holberton School"
+    ((i++))
+done

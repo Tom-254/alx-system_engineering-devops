@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-
+#read from file and printout something
+while IFS=: read -r -a content
+do
+  echo "${content[0]}:${content[2]}:${content[5]}"
+done < "/etc/passwd"
