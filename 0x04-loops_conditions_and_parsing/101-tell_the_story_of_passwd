@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-#read from file and printout something
-while IFS=: read -r -a content
-do
-    echo "The user ${content[0]} is part of the ${content[3]} gang, lives in ${content[5]} and rides ${content[6]}. ${content[2]}'s place is protected by the passcode ${content[1]}, more info about the user here: ${content[4]}"
-done < "/etc/passwd"
+# Write a Bash script that displays the content of the file /etc/passwd,
+# using the while loop + IFS.
+
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7; do
+    echo "The user $f1 is part of the $f4 gang, lives in $f6 and rides $f7. $f3's place is protected by the passcode $f2, more info about the user here: $f5"
+
+done</etc/passw
