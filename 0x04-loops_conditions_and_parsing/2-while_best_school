@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#prints Holberton 10 timesl
+#prints Holberton 10 times using for loops
 i=0
 while (( i < 10))
 do
-    echo "Holberton School"
-    ((i++))
+	echo "Holberton School"
+	((i++))
 done;
