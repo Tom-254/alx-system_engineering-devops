@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #Print "Holberton School" 10 times using an until loop
 i=0
 until [ $i -eq 10 ]
