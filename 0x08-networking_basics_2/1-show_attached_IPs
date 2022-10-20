@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# list all active ipaddresses
+ifconfig | grep "inet " | cut -d " " -f10
