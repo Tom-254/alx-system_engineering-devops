@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+allThreads=("0-change_your_home_IP" "1-show_attached_IPs" "100-port_listening_on_localhost")
+
+mkdir -p "0x08-networking_basics_2"
+
+
+for t in ${allThreads[@]}; do
+
+    if [[ $t == *".py"* ]]; then
+        echo -e "#!/usr/bin/python3\n" > "./0x08-networking_basics_2/$t" && chmod +x "./0x08-networking_basics_2/$t"
+    else
+        echo -e "#!/usr/bin/env bash" > "./0x08-networking_basics_2/$t" && chmod +x "./0x08-networking_basics_2/$t"
+    fi
+
+done
+
+echo -e "# ALX Software Engineering Programme Project: 0x08. Networking basics #1" > "./0x08-networking_basics_2/README.md"
+
+cp "0x02-shell_redirections/correction" "./0x08-networking_basics_2/"
+
+cd /root/alx-system_engineering-devops/0x08-networking_basics_2
