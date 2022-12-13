@@ -20,7 +20,7 @@ service {'nginx':
 
 file { '/var/www/html/index.nginx-debian.html':
   ensure  => 'present',
-  content => 'Holberton School',
+  content => 'Hello World!',
   require =>  Package['nginx']
 }
 
