@@ -1,34 +1,20 @@
-# redirect me and nginx
-exec {'apt-get-update':
-  command => '/usr/bin/apt-get update'
-}
-
-package {'apache2.2-common':
-  ensure  => 'absent',
-  require => Exec['apt-get-update']
-}
+# install and configure an Nginx server using Puppet instead of Bash
 
 package { 'nginx':
-  ensure  => 'installed',
-  require => Package['apache2.2-common']
+  ensure => installed,
+  name   => 'nginx'
 }
-
-service {'nginx':
-  ensure  =>  'running',
-  require => file_line['perform a redirection'],
-}
-
-file { '/var/www/html/index.nginx-debian.html':
-  ensure  => 'present',
+file { 'path_to_html':
   content => 'Hello World!',
-  require =>  Package['nginx']
+  path    => '/var/www/html/index.nginx-debian.html'
 }
-
-file_line { 'perform a redirection':
-  ensure  => 'present',
-  path    => '/etc/nginx/sites-enabled/default',
-  line    => 'rewrite ^/redirect_me/$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
-  after   => 'root /var/www/html;',
-  require => Package['nginx'],
-  notify  => Service['nginx'],
+file_line { 'put_in_line':
+  ensure => present,
+  path   => 'etc/nginx/sites-available/default',
+  after  => '/listen 80 default_server;'
+  line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;'
+}
+service { 'nginx':
+  ensure  => running,
+  require => Package['nginx']
 }
