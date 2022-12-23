@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+sudo apt-get update
+sudo apt-get install snapd
+sudo apt-get remove certbot
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot certonly --standalone
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"

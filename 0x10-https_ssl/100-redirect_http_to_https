@@ -35,13 +35,13 @@ defaults
 
 frontend www-http
    bind *:80
-   reqadd X-Forwarded-Proto:\ http
+   http-request set-header X-Forwarded-Proto http
    default_backend www-backend
 
 frontend www-https
-   bind *:443 ssl crt /etc/haproxy/certs/www.bandgo.tech.pem
+   bind *:443 ssl crt /etc/letsencrypt/live/www.bandgo.tech/fullchain.pem
    http-request redirect scheme https code 301 unless { ssl_fc }
-   reqadd X-Forwarded-Proto:\ https
+   http-request set-header X-Forwarded-Proto https
    acl letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl
    default_backend www-backend
