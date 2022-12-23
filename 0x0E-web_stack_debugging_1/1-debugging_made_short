@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# removes faulty file
-rm /etc/nginx/sites-enabled/default
-cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# Bash script to fix my nginx server
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
 sudo service nginx restart
-kill -9 "$(cat /var/run/nginx.pid)"
+rm /var/run/nginx.pid
