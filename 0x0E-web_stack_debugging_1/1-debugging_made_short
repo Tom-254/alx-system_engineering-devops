@@ -2,4 +2,4 @@
 # Bash script to fix my nginx server
 sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
 sudo service nginx restart
-rm /var/run/nginx.pid
+kill -9 "$(cat /var/run/nginx.pid)"
