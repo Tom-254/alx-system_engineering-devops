@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Creates a dump of sql
-mysqldump -u root --password="$1" > backup.sql
+mysqldump -u root --password="$1" -A > backup.sql
 file_name=$(date +"%d-%m-%Y")
 tar -czvf "$file_name".tar.gz backup.sql
