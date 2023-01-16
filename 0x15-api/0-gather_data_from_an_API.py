@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""Script that exports an employee TODO tasks to a csv file
+    Parameters:
+    employee_id: Is an interger representing an employee id.
+"""
 import requests
 import sys
 
