@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Script that exports an employee TODO tasks to a json file
-    Parameters:
-    employee_id: Is an interger representing an employee id.
+    Is an interger representing an employee id.
 """
 import json
 import requests
