@@ -1,14 +1,18 @@
 #!/usr/bin/python3
+"""Script that exports an employee TODO tasks to a json file
+    Parameters:
+    employee_id: Is an interger representing an employee id.
+"""
 import json
 import requests
 import sys
 
 
 def tasks_done(id):
-    '''Script that exports an employee TODO tasks to a json file
+    """Script that exports an employee TODO tasks to a json file
         Parameters:
         employee_id: Is an interger representing an employee id.
-    '''
+    """
 
     url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     response = requests.get(url)

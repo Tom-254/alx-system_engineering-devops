@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+"""Script that exports all employees TODO tasks to a json file"""
 import json
 import requests
 import sys
 
 
 def tasks_done():
-    '''Script that exports all employees TODO tasks to a json file'''
+    """Script that exports all employees TODO tasks to a json file"""
 
     id = 1
     all_todos = {}

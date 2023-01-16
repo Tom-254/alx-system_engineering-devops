@@ -4,10 +4,10 @@ import sys
 
 
 def tasks_done(id):
-    '''Script that displays an employee completed TODO tasks in stout
+    """Script that displays an employee completed TODO tasks in stout
         Parameters:
         employee_id: Is an interger representing an employee id.
-    '''
+    """
 
     url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     response = requests.get(url)
