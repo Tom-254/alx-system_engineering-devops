@@ -11,7 +11,7 @@ import requests
 def count_words(subreddit, word_list, hot_list=[], after=None):
     '''function count_words : Get ALL hot posts'''
     headers = {'User-agent':
-    """Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"""}
+               """Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"""}
     params = {'limit': 100}
     if isinstance(after, str):
         if after != "STOP":
