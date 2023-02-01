@@ -1,0 +1,2 @@
+#!/bin/bash
+git add . && git commit -m "0x17. Web stack debugging #3" && git push
