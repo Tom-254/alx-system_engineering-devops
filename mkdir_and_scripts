@@ -1,21 +1,26 @@
 #!/usr/bin/env bash
-allThreads=("0-change_your_home_IP" "1-show_attached_IPs" "100-port_listening_on_localhost")
+allThreads=("2-app_server-nginx_config" "3-app_server-nginx_config" "4-app_server-nginx_config" "5-app_server-nginx_config" "gunicorn.service" "4-reload_gunicorn_no_downtime")
 
-mkdir -p "0x08-networking_basics_2"
-
+mkdir -p "0x1A-application_server"
 
 for t in ${allThreads[@]}; do
 
     if [[ $t == *".py"* ]]; then
-        echo -e "#!/usr/bin/python3\n" > "./0x08-networking_basics_2/$t" && chmod +x "./0x08-networking_basics_2/$t"
+        echo -e "#!/usr/bin/python3\n" > "./0x1A-application_server/$t" && chmod +x "./0x1A-application_server/$t"
     else
-        echo -e "#!/usr/bin/env bash" > "./0x08-networking_basics_2/$t" && chmod +x "./0x08-networking_basics_2/$t"
+        echo -e "#!/usr/bin/env bash" > "./0x1A-application_server/$t" && chmod +x "./0x1A-application_server/$t"
     fi
 
 done
 
-echo -e "# ALX Software Engineering Programme Project: 0x08. Networking basics #1" > "./0x08-networking_basics_2/README.md"
+echo -e "# ALX Software Engineering Programme Project: 0x1A. Application server" > "./0x1A-application_server/README.md"
 
-cp "0x02-shell_redirections/correction" "./0x08-networking_basics_2/"
+cp "0x02-shell_redirections/correction" "./0x1A-application_server/"
 
-cd /root/alx-system_engineering-devops/0x08-networking_basics_2
+cd /root/alx-system_engineering-devops/0x1A-application_server
+
+## ssh ubuntu@34.201.165.150
+## ssh ubuntu@100.26.121.251
+## ssh ubuntu@52.91.136.240
+## curl -sI 34.201.165.150/airbnb-onepage/
+## curl 34.201.165.150/api/v1/states

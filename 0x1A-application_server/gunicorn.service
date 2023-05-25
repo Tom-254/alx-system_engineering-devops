@@ -11,4 +11,3 @@ ExecStop=/bin/pkill gunicorn
 
 [Install]
 WantedBy=multi-user.target
-q
